@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
+import { MyIfDirective } from './myIf.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    MyIfDirective
   ],
   imports: [
     BrowserModule

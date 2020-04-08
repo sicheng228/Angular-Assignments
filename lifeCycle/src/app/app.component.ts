@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'lifeCycle';
 
   fromParent='FromParent';
-
+  constructor() { console.log('parent constructor...');}
   ngOnChanges(){ console.log('Parent OnChange...'); }
   ngOnInit() { console.log('Parent OnInit...'); }
   ngDoCheck(){ console.log('Parent DoCheck...'); }

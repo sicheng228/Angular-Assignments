@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ServeToDoListService {
   private items:string[]=["phone","laptop","earPhone","macbook","Sofa","Lamp","cup"];
 
-  constructor() { }
+  constructor() {}
 
   getItems(){
     return this.items;

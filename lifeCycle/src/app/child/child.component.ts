@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
 
-  constructor() { }
-  
+  constructor() { console.log('Child constructor...');}
+
   @Input() getFromParent;
 
   propertyOfChild='FromChild';

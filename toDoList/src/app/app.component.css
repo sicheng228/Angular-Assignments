@@ -33,15 +33,21 @@
 }
 .search input{
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: 30px;
   margin: 15px;
   border: 2px solid gray;
   border-radius: 4px;
 }
-.search button{
+#sbtn{
   position: absolute;
   padding: 0px;
   margin: 10px;
-  right: 20px;
+  right: 70px;
+}
+#clearbtn{
+  position: absolute;
+  padding: 0px;
+  margin: 45px 20px;
+  right: 30px;
 }

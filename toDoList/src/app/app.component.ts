@@ -27,9 +27,14 @@ export class AppComponent {
     this.serve.deleteItems(key);
   }
   searchItems(value){
-    this.todoList= this.todoList.filter(e=>e.toLowerCase().includes(value));
+    this.todoList= this.todoList.filter(e=>e.toLowerCase().startsWith(value.toLowerCase()));
+    //e=>e.toLowerCase().includes(value.toLowerCase())
     if(value==''){
       this.todoList = this.serve.getItems();
     }
+  }
+  clearSearch(value){
+    this.todoList = this.serve.getItems();
+    value='';
   }
 }

@@ -6,10 +6,11 @@
   </div>
 
   <div class="search">
-    <input type='text' #myBtn>
-    <button type="button" (click)="searchItems(myBtn.value)">
+    <input type='text' #myBtn >
+    <button id="sbtn" type="button" (click)="searchItems(myBtn.value)">
       <img src="/favicon.ico" alt="">
     </button>
+    <button (click)="clearSearch(myBtn.value)" id ="clearbtn">clear</button>
   </div>
 
   <div class="items">

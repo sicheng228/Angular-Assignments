@@ -1,0 +1,47 @@
+.toDo{
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 700px;
+  border: solid black 5px;
+}
+.add{
+  height: 70px;
+  border: solid black 1px;
+
+}
+.add input{
+  width: 60%;
+  height: 30px;
+  margin: 15px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.add button{
+  position: absolute;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.search{
+  height: 70px;
+  border: solid black 1px;
+}
+.search input{
+  position: absolute;
+  width: 80%;
+  height: 30px;
+  margin: 15px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.search button{
+  position: absolute;
+  padding: 0px;
+  margin: 10px;
+  right: 20px;
+}

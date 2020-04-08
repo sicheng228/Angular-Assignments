@@ -1,0 +1,24 @@
+
+<div class="toDo">
+  <div class="add">
+    <input [(ngModel)]="toAdd" />
+    <button (click)="additem()">ADD</button>
+  </div>
+
+  <div class="search">
+    <input type='text' #myBtn>
+    <button type="button" (click)="searchItems(myBtn.value)">
+      <img src="/favicon.ico" alt="">
+    </button>
+  </div>
+
+  <div class="items">
+    <ul>
+      <li *ngFor='let item of todoList ; let key = index' >
+        {{key+1+'.' }}   {{item}}
+        <button style="position: absolute; right: 20px;" (click)="deleteItem(key)">X</button>
+        <hr>
+      </li>
+    </ul>
+  </div>
+</div>

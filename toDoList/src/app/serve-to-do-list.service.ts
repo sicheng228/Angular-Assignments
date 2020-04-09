@@ -14,7 +14,7 @@ export class ServeToDoListService {
   setItems(item:string){
     this.items.push(item);
   }
-  deleteItems(key){
-    this.items.splice(key, 1);
+  deleteItems(item){
+    this.items.splice(this.items.indexOf(item), 1);
   }
 }

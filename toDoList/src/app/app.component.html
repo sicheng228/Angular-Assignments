@@ -17,7 +17,7 @@
     <ul>
       <li *ngFor='let item of todoList ; let key = index' >
         {{key+1+'.' }}   {{item}}
-        <button style="position: absolute; right: 20px;" (click)="deleteItem(key)">X</button>
+        <button style="position: absolute; right: 20px;" (click)="deleteItem(item)">X</button>
         <hr>
       </li>
     </ul>

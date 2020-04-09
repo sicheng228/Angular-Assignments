@@ -9,7 +9,7 @@ import { ServeToDoListService } from "./serve-to-do-list.service";
 export class AppComponent {
   title = 'toDoList';
   todoList:string[];
-  toAdd:string;
+  toAdd:string='';
 
   constructor(private serve:ServeToDoListService){}
 
@@ -18,17 +18,18 @@ export class AppComponent {
   }
 
   additem(){
-    if(this.toAdd!=null){
+    if(this.toAdd!=''){
       this.serve.setItems(this.toAdd);
     }
     this.toAdd='';
   }
-  deleteItem(key){
-    this.serve.deleteItems(key);
+  deleteItem(item){
+    this.serve.deleteItems(item);
+    this.todoList.splice(this.todoList.indexOf(item), 1);
   }
   searchItems(value){
-    this.todoList= this.todoList.filter(e=>e.toLowerCase().startsWith(value.toLowerCase()));
-    //e=>e.toLowerCase().includes(value.toLowerCase())
+    this.todoList= this.todoList.filter(e=>e.toLowerCase().includes(value.toLowerCase()));
+    //e=>e.toLowerCase().startsWith(value.toLowerCase())
     if(value==''){
       this.todoList = this.serve.getItems();
     }

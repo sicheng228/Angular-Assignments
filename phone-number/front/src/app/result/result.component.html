@@ -1,0 +1,12 @@
+<div class="" style="text-align:center">
+  <h1>Combinations:</h1>
+  <p>total count : {{len}}</p>
+  <div style="text-align:center" *ngFor="let number of results; let i=index" >
+    <p *ngIf="(currentPage)*eachPage<=i&&i<(currentPage+1)*eachPage">{{i+" : "+number}}</p>
+  </div>
+  <mat-paginator #paginator [length]="len"
+                   [pageSize]="eachPage"
+                   [pageSizeOptions]="[5, 10, 50]"
+                   (page) = "pageEvent($event)">
+                 </mat-paginator>
+</div>

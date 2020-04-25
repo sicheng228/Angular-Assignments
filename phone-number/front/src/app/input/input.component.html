@@ -1,0 +1,31 @@
+<div class="pad">
+  <div >
+    <input type="text" [(ngModel)]="list" style="margin-bottom:30px;height:40px;width:80%;font-size:20px">
+  </div>
+  <div class="btn" *ngFor="let number of data; let i=index">
+    <button type="button"(click)="add(i+1)">
+      <p class="bigger">{{i+1}}</p>
+      <p>{{data[i]}}</p>
+    </button>
+  </div>
+  <div class="btn" >
+    <button type="button">
+      <p class="bigger">*</p>
+    </button>
+  </div>
+  <div class="btn" >
+    <button type="button" (click)="add(0)">
+      <p class="bigger">0</p>
+    </button>
+  </div>
+  <div class="btn" >
+    <button type="button" (click)="goToCalculate()">
+      <p class="bigger">#</p>
+    </button>
+  </div>
+</div>
+<div class="note">
+  <p>**Note:</p>
+  <p>Please enter a valid phone number</p>
+  <p>Press '#' to get results</p>
+</div>

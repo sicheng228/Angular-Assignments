@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'London Clock';
-  timeZone=new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' });
-  date=new Date(this.timeZone);
+  // timeZone=new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' });
+  date=new Date();
 
   second=this.date.getSeconds();
   minute=this.date.getMinutes();

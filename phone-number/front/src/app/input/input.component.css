@@ -1,0 +1,32 @@
+.pad{
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  left:450px;
+  border: solid gray 1px;
+  text-align: center;
+  padding-top: 20px;
+}
+.btn{
+  width: 130px;
+  height: 120px;
+  float: left;
+  text-align: center;
+}
+button{
+  width: 80px;
+  height: 80px;
+}
+p{
+  font-size: 10px;
+  line-height: 10px;
+}
+.bigger{
+  font-size: 25px;
+}
+.note{
+  padding: 50px;
+}
+.note p{
+  font-size: 20px;
+}
